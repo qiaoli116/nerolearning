@@ -1,0 +1,27 @@
+/* Brand variables and tokens */
+:root,
+[data-bs-theme="light"] {
+  /* Typography */
+  --bs-font-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --nl-heading-font: "Poppins", var(--bs-font-sans-serif);
+
+  /* Colors */
+  --nl-purple: #7C4DFF;
+  --nl-teal: #00BFA6;
+  --nl-grey: #F5F5F5;
+  --nl-charcoal: #333333;
+  --nl-white: #FFFFFF;
+
+  /* Bootstrap tokens */
+  --bs-body-color: #333333;
+  --bs-body-bg: #ffffff;
+  --bs-primary: var(--nl-purple);
+  --bs-secondary: var(--nl-teal);
+  --bs-link-color: var(--nl-purple);
+  --bs-border-color: #e6e6e6;
+  --bs-card-bg: #ffffff;
+  --bs-heading-color: var(--nl-charcoal);
+
+  /* Gradients */
+  --nl-hero-gradient: linear-gradient(135deg, #7C4DFF 0%, #00BFA6 100%);
+}

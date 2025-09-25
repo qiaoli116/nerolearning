@@ -1,0 +1,595 @@
+<!doctype html>
+<!--
+Quick start
+
+1) npm install
+2) npm run dev   # opens at http://127.0.0.1:3000
+3) Edit SCSS in src/scss/
+4) npm run build # one-off production CSS build
+-->
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NeoLearn Institute — Your Future, Your Way.</title>
+
+    <meta name="description" content="NeoLearn Institute — Your Future, Your Way. Personalized, technology-driven learning experiences.">
+    <link rel="icon" href="https://placehold.co/32x32.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- Header / Navbar -->
+    <header class="sticky-top shadow-sm">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Primary">
+        <div class="container">
+          <a class="navbar-brand brand-heading" href="#home">NeoLearn Institute</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="primaryNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+              <li class="nav-item"><a class="nav-link" data-nav href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" data-nav href="#brand">Brand</a></li>
+              <li class="nav-item"><a class="nav-link" data-nav href="#personalization">Personalization</a></li>
+              <li class="nav-item"><a class="nav-link" data-nav href="#technology">Technology</a></li>
+              <li class="nav-item"><a class="nav-link" data-nav href="#additional">Additional Info</a></li>
+              <li class="nav-item"><a class="nav-link" data-nav href="#uikit">UI Kit</a></li>
+              <li class="nav-item"><a class="nav-link" data-nav href="#contact">Contact</a></li>
+              <li class="nav-item ms-lg-3">
+                <button id="themeToggle" class="btn btn-outline-secondary d-flex align-items-center" type="button" aria-pressed="false" aria-label="Toggle color theme">
+                  <i data-icon class="bi bi-sun-fill me-2" aria-hidden="true"></i>
+                  <span class="d-none d-sm-inline">Theme</span>
+                  <span class="visually-hidden">Switch to dark theme</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section id="home" class="py-5 bg-body-secondary">
+        <div class="container py-4">
+          <div class="h-hero p-4 p-lg-5">
+            <div class="row align-items-center g-4">
+              <div class="col-12 col-lg-6 text-white">
+                <h1 class="display-5 brand-heading mb-3">NeoLearn Institute</h1>
+                <p class="lead mb-4">Your Future, Your Way.</p>
+                <div class="d-flex gap-3 flex-wrap">
+                  <a href="#programs" class="btn btn-gradient btn-gradient-contrast btn-lg">Explore Programs</a>
+                  <a href="#personalization" class="btn btn-outline-light btn-lg">How Personalization Works</a>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 text-center">
+                <img class="img-fluid rounded shadow" src="./assets/img/hero.png" alt="Hero illustration" width="640" height="480">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brand Essence -->
+      <section id="brand" class="py-5">
+        <div class="container py-4">
+          <div class="row g-4 mb-4">
+            <div class="col-12 col-lg-8">
+              <h2 class="brand-heading mb-3">Brand Essence</h2>
+              <p class="mb-0">Mission:</p>
+              <p class="fs-5">“To provide fully personalized, technology-driven learning experiences that empower every individual to shape their future.”</p>
+              <p class="mb-0">Vision:</p>
+              <p class="fs-5">“To lead the transformation where education adapts to each learner through innovation and creativity.”</p>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <span class="card-icon me-2"><i class="bi bi-person-gear" aria-hidden="true"></i></span>
+                    <h3 class="h5 mb-0">Personalization</h3>
+                  </div>
+                  <p class="mb-0">Education that adapts to you.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <span class="card-icon me-2"><i class="bi bi-cpu" aria-hidden="true"></i></span>
+                    <h3 class="h5 mb-0">Innovation</h3>
+                  </div>
+                  <p class="mb-0">Cutting-edge tech powering every journey.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <span class="card-icon me-2"><i class="bi bi-rocket-takeoff" aria-hidden="true"></i></span>
+                    <h3 class="h5 mb-0">Empowerment</h3>
+                  </div>
+                  <p class="mb-0">Skills, confidence, and agency.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <span class="card-icon me-2"><i class="bi bi-infinity" aria-hidden="true"></i></span>
+                    <h3 class="h5 mb-0">Lifelong Growth</h3>
+                  </div>
+                  <p class="mb-0">Learn, apply, evolve—continuously.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visual Identity -->
+      <section class="py-5 section-muted">
+        <div class="container py-4">
+          <h2 class="brand-heading mb-4">Visual Identity</h2>
+          <div class="row g-4 align-items-stretch">
+            <div class="col-12 col-lg-6">
+              <div class="p-4 bg-body rounded h-100">
+                <h3 class="h5 mb-3">Color System</h3>
+                <div class="row row-cols-2 g-3">
+                  <div class="col">
+                    <div class="color-swatch swatch-purple"></div>
+                    <div class="small mt-2 fw-medium">Purple — #7C4DFF</div>
+                    <div class="small text-body-secondary">Primary actions, emphasis</div>
+                  </div>
+                  <div class="col">
+                    <div class="color-swatch swatch-teal"></div>
+                    <div class="small mt-2 fw-medium">Teal — #00BFA6</div>
+                    <div class="small text-body-secondary">Secondary accents, highlights</div>
+                  </div>
+                  <div class="col">
+                    <div class="color-swatch swatch-grey"></div>
+                    <div class="small mt-2 fw-medium">Light Grey — #F5F5F5</div>
+                    <div class="small text-body-secondary">Surfaces, section backgrounds</div>
+                  </div>
+                  <div class="col">
+                    <div class="color-swatch swatch-charcoal"></div>
+                    <div class="small mt-2 fw-medium">Charcoal — #333333</div>
+                    <div class="small text-body-secondary">Text, dark background</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="p-4 bg-body rounded h-100">
+                <h3 class="h5 mb-3">Typography</h3>
+                <p class="mb-1"><span class="fw-semibold">Headings:</span> Poppins (600/700)</p>
+                <p><span class="fw-semibold">Body:</span> Inter (400/500)</p>
+                <div class="mt-3">
+                  <h1 class="display-6 brand-heading mb-1">H1 NeoLearn</h1>
+                  <h2 class="h2 brand-heading mb-1">H2 Heading</h2>
+                  <h3 class="h3 brand-heading mb-1">H3 Heading</h3>
+                  <h4 class="h4 brand-heading mb-1">H4 Heading</h4>
+                  <h5 class="h5 brand-heading mb-1">H5 Heading</h5>
+                  <h6 class="h6 brand-heading mb-3">H6 Heading</h6>
+                  <p class="mb-0">Body text example. Comfortable line-height and legible contrast.</p>
+                </div>
+                <div class="mt-4">
+                  <h3 class="h6">Buttons</h3>
+                  <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-outline-primary">Outline</button>
+                    <button class="btn btn-gradient">Gradient</button>
+                    <button class="btn btn-link">Link</button>
+                    <button class="btn btn-primary" disabled>Disabled</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Personalization -->
+      <section id="personalization" class="py-5">
+        <div class="container py-4">
+          <div class="row g-4 align-items-center">
+            <div class="col-12 col-lg-6 order-2 order-lg-1">
+              <h2 class="brand-heading mb-3">Personalization</h2>
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="tab-pathways" data-bs-toggle="pill" data-bs-target="#pane-pathways" type="button" role="tab" aria-controls="pane-pathways" aria-selected="true">Adaptive Pathways</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="tab-feedback" data-bs-toggle="pill" data-bs-target="#pane-feedback" type="button" role="tab" aria-controls="pane-feedback" aria-selected="false">AI-guided Feedback</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="tab-dashboard" data-bs-toggle="pill" data-bs-target="#pane-dashboard" type="button" role="tab" aria-controls="pane-dashboard" aria-selected="false">Learner Dashboard</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pane-pathways" role="tabpanel" aria-labelledby="tab-pathways" tabindex="0">
+                  <p>Your goals define the path. Our platform adjusts content, pace, and assessment to match your strengths and ambitions.</p>
+                </div>
+                <div class="tab-pane fade" id="pane-feedback" role="tabpanel" aria-labelledby="tab-feedback" tabindex="0">
+                  <p>Clear, timely insights keep you moving forward—never guessing, always growing.</p>
+                </div>
+                <div class="tab-pane fade" id="pane-dashboard" role="tabpanel" aria-labelledby="tab-dashboard" tabindex="0">
+                  <p>One place to plan, track, and reflect on your progress with real-time recommendations.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-2 text-center">
+              <img class="img-fluid rounded shadow" src="https://placehold.co/560x420?text=Personalization+Illustration" alt="Personalization illustration" width="560" height="420" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technology Stack -->
+      <section id="technology" class="py-5">
+        <div class="container py-4">
+          <div class="row g-4 align-items-center">
+            <div class="col-12 col-lg-6">
+              <div class="d-flex flex-column gap-4">
+                <div class="d-flex align-items-start gap-3">
+                  <i class="bi bi-cloud-check fs-2 text-primary" aria-hidden="true"></i>
+                  <div>
+                    <h3 class="h5 mb-1">Secure Cloud</h3>
+                    <p class="mb-0">Modern, scalable infrastructure delivering reliable learning experiences anywhere.</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-start gap-3">
+                  <i class="bi bi-shield-lock fs-2 text-primary" aria-hidden="true"></i>
+                  <div>
+                    <h3 class="h5 mb-1">Data Privacy First</h3>
+                    <p class="mb-0">Transparent controls with consent by default—your data, your choice.</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-start gap-3">
+                  <i class="bi bi-diagram-3 fs-2 text-primary" aria-hidden="true"></i>
+                  <div>
+                    <h3 class="h5 mb-1">Interoperable Standards</h3>
+                    <p class="mb-0">LTI and xAPI for seamless platform integrations and portability.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 text-center">
+              <img class="img-fluid rounded shadow" src="https://placehold.co/560x320?text=Platform+UI+Mock" alt="Platform UI mock" width="560" height="320" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Carousel -->
+      <section class="py-5 section-muted">
+        <div class="container py-4">
+          <h2 class="brand-heading mb-4">Testimonials</h2>
+          <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card bg-body border-0 shadow-sm mx-auto col-12 col-lg-10 col-xl-8">
+                  <div class="card-body p-4 p-md-5">
+                    <div class="d-flex align-items-center mb-3">
+                      <img src="https://placehold.co/96x96?text=Avatar" class="rounded-circle me-3" alt="Avatar for Alex" width="48" height="48" loading="lazy">
+                      <div class="small text-body-secondary">Alex, Graduate</div>
+                    </div>
+                    <blockquote class="blockquote mb-0">“NeoLearn gave me a pathway that finally fits how I learn.”</blockquote>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card bg-body border-0 shadow-sm mx-auto col-12 col-lg-10 col-xl-8">
+                  <div class="card-body p-4 p-md-5">
+                    <div class="d-flex align-items-center mb-3">
+                      <img src="https://placehold.co/96x96?text=Avatar" class="rounded-circle me-3" alt="Avatar for Priya" width="48" height="48" loading="lazy">
+                      <div class="small text-body-secondary">Priya, L&amp;D Manager</div>
+                    </div>
+                    <blockquote class="blockquote mb-0">“Our team upskilled faster with personalized tracks.”</blockquote>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card bg-body border-0 shadow-sm mx-auto col-12 col-lg-10 col-xl-8">
+                  <div class="card-body p-4 p-md-5">
+                    <div class="d-flex align-items-center mb-3">
+                      <img src="https://placehold.co/96x96?text=Avatar" class="rounded-circle me-3" alt="Avatar for Marco" width="48" height="48" loading="lazy">
+                      <div class="small text-body-secondary">Marco, Learner</div>
+                    </div>
+                    <blockquote class="blockquote mb-0">“The feedback loop is immediate and actionable.”</blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev" aria-label="Previous testimonial">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next" aria-label="Next testimonial">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Additional Info -->
+      <section id="additional" class="py-5">
+        <div class="container py-4">
+          <div class="row g-4 align-items-center mb-4">
+            <div class="col-12 col-lg-7">
+              <h2 class="brand-heading mb-2">Additional Info</h2>
+              <p class="mb-0">Policies, accessibility, and brand guidance.</p>
+            </div>
+            <div class="col-12 col-lg-5 text-lg-end text-center">
+              <img class="img-fluid rounded shadow" src="https://placehold.co/800x320?text=Policy+Overview" alt="Policy overview banner" width="800" height="320" loading="lazy">
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-12 col-lg-7">
+              <div class="accordion" id="infoAccordion">
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="acc-acc">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc-acc-body" aria-expanded="true" aria-controls="acc-acc-body">
+                      Accreditation &amp; Compliance
+                    </button>
+                  </h3>
+                  <div id="acc-acc-body" class="accordion-collapse collapse show" aria-labelledby="acc-acc" data-bs-parent="#infoAccordion">
+                    <div class="accordion-body">
+                      “NeoLearn Institute pursues recognized accreditation pathways and maintains compliance with applicable standards. We align policies with current regulatory requirements and publish updates transparently.”
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="acc-privacy">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-privacy-body" aria-expanded="false" aria-controls="acc-privacy-body">
+                      Data Protection &amp; Privacy
+                    </button>
+                  </h3>
+                  <div id="acc-privacy-body" class="accordion-collapse collapse" aria-labelledby="acc-privacy" data-bs-parent="#infoAccordion">
+                    <div class="accordion-body">
+                      “We practice privacy-by-design. Learners control their data with consent-first settings, clear retention windows, and export options. Security is enforced through encryption, role-based access, and continuous monitoring.”
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="acc-access">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-access-body" aria-expanded="false" aria-controls="acc-access-body">
+                      Accessibility Statement
+                    </button>
+                  </h3>
+                  <div id="acc-access-body" class="accordion-collapse collapse" aria-labelledby="acc-access" data-bs-parent="#infoAccordion">
+                    <div class="accordion-body">
+                      “We strive to meet WCAG 2.2 AA. Our design system prioritizes color contrast, keyboard navigation, focus states, and screen-reader semantics. We welcome feedback to improve accessibility.”
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="acc-brand">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-brand-body" aria-expanded="false" aria-controls="acc-brand-body">
+                      Brand Assets &amp; Usage
+                    </button>
+                  </h3>
+                  <div id="acc-brand-body" class="accordion-collapse collapse" aria-labelledby="acc-brand" data-bs-parent="#infoAccordion">
+                    <div class="accordion-body">
+                      “Use the NeoLearn wordmark and colors as specified. Maintain clear space, avoid distortion, and ensure readability in both light and dark themes. For media kits and approvals, contact our brand team.”
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-5">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="h5 brand-heading mb-3">FAQs</h3>
+                  <div class="mb-3">
+                    <p class="mb-1 fw-semibold">Q: “How does personalization work?”</p>
+                    <p class="mb-0">A: “Your goals and performance guide adaptive pathways, content pacing, and recommended practice.”</p>
+                  </div>
+                  <div class="mb-3">
+                    <p class="mb-1 fw-semibold">Q: “Can I export my learning data?”</p>
+                    <p class="mb-0">A: “Yes. We offer learner-controlled exports and interoperable standards (LTI, xAPI).”</p>
+                  </div>
+                  <div>
+                    <p class="mb-1 fw-semibold">Q: “What if I prefer traditional learning?”</p>
+                    <p class="mb-0">A: “You can opt for fixed sequences and instructor-led paths while still receiving supportive feedback.”</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- UI Kit -->
+      <section id="uikit" class="py-5 section-muted">
+        <div class="container py-4">
+          <h2 class="brand-heading mb-4">UI Kit</h2>
+          <div class="row g-4">
+            <div class="col-12 col-lg-6">
+              <div class="p-3 bg-body rounded h-100">
+                <h3 class="h6">Alerts</h3>
+                <div class="alert alert-primary" role="alert">Primary alert—brand-aligned emphasis.</div>
+                <div class="alert alert-secondary" role="alert">Secondary alert—supportive context.</div>
+                <div class="alert alert-success" role="alert">Success alert—positive confirmation.</div>
+                <div class="alert alert-warning" role="alert">Warning alert—cautionary note.</div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="p-3 bg-body rounded h-100">
+                <h3 class="h6">Badges &amp; Buttons</h3>
+                <p>
+                  <span class="badge text-bg-secondary me-2">Default</span>
+                  <span class="badge badge-brand">Brand</span>
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                  <button class="btn btn-primary">Primary</button>
+                  <button class="btn btn-secondary">Secondary</button>
+                  <button class="btn btn-outline-primary">Outline</button>
+                  <button class="btn btn-gradient">Gradient</button>
+                  <button class="btn btn-link">Link</button>
+                  <button class="btn btn-primary" disabled>Disabled</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="p-3 bg-body rounded h-100">
+                <h3 class="h6">Forms</h3>
+                <form class="row g-3" onsubmit="return false" aria-label="Demo form controls">
+                  <div class="col-12">
+                    <label for="demoEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="demoEmail" placeholder="you@example.com">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="demoSelect" class="form-label">Select pathway</label>
+                    <select id="demoSelect" class="form-select">
+                      <option>Data Science</option>
+                      <option>Design</option>
+                      <option>Engineering</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-6 d-flex align-items-end">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="demoSwitch">
+                      <label class="form-check-label" for="demoSwitch">Email updates</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="p-3 bg-body rounded h-100">
+                <h3 class="h6">Table</h3>
+                <div class="table-responsive">
+                  <table class="table table-hover align-middle">
+                    <thead class="table-light">
+                      <tr>
+                        <th scope="col">Program</th>
+                        <th scope="col">Level</th>
+                        <th scope="col">Mode</th>
+                        <th scope="col" class="text-end">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Data Science</td>
+                        <td>Intermediate</td>
+                        <td>Self-paced</td>
+                        <td class="text-end"><span class="badge text-bg-success">Open</span></td>
+                      </tr>
+                      <tr>
+                        <td>UX Design</td>
+                        <td>Beginner</td>
+                        <td>Instructor-led</td>
+                        <td class="text-end"><span class="badge text-bg-warning">Waitlist</span></td>
+                      </tr>
+                      <tr>
+                        <td>Software Engineering</td>
+                        <td>Advanced</td>
+                        <td>Hybrid</td>
+                        <td class="text-end"><span class="badge text-bg-secondary">Planned</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section id="contact" class="py-5">
+        <div class="container py-4">
+          <div class="p-4 p-md-5 cta-panel" data-bs-theme-invert>
+            <div class="row g-4 align-items-center">
+              <div class="col-12 col-lg-8">
+                <h2 class="brand-heading mb-2">Design your learning journey.</h2>
+                <p class="lead mb-0">Choose a pathway, customize your goals, and let technology adapt to you.</p>
+              </div>
+              <div class="col-12 col-lg-4 text-lg-end">
+                <div class="d-flex gap-2 justify-content-lg-end flex-wrap">
+                  <a href="#start" class="btn btn-primary btn-lg">Start Now</a>
+                  <a href="#talk" class="btn btn-secondary btn-lg">Talk to Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="pt-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-12 col-lg-4">
+              <h3 class="h5 brand-heading">About</h3>
+              <p class="mb-1">NeoLearn Institute</p>
+              <p class="small mb-3">Your Future, Your Way.</p>
+              <p class="small mb-0">“To provide fully personalized, technology-driven learning experiences that empower every individual to shape their future.”</p>
+            </div>
+            <div class="col-6 col-lg-4">
+              <h3 class="h6 brand-heading">Quick Links</h3>
+              <ul class="list-unstyled mb-0">
+                <li><a class="link-body-emphasis" href="#home">Home</a></li>
+                <li><a class="link-body-emphasis" href="#brand">Brand</a></li>
+                <li><a class="link-body-emphasis" href="#personalization">Personalization</a></li>
+                <li><a class="link-body-emphasis" href="#technology">Technology</a></li>
+                <li><a class="link-body-emphasis" href="#additional">Additional Info</a></li>
+                <li><a class="link-body-emphasis" href="#uikit">UI Kit</a></li>
+                <li><a class="link-body-emphasis" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-4">
+              <h3 class="h6 brand-heading">Contact</h3>
+              <ul class="list-unstyled small">
+                <li>Email: hello@neolearn.example</li>
+                <li>Social:
+                  <a href="#" class="ms-2" aria-label="Twitter"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+                  <a href="#" class="ms-2" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+                  <a href="#" class="ms-2" aria-label="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom mt-4 py-3">
+            <div class="d-flex justify-content-between small flex-wrap gap-2">
+              <span>© <span id="year"></span> NeoLearn Institute</span>
+              <span>Built with Bootstrap 5.3</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- App JS -->
+    <script src="assets/js/theme.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

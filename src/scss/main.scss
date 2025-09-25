@@ -1,0 +1,13 @@
+/* Import order: variables -> themes -> base -> components -> utilities */
+@import 'variables';
+@import 'themes';
+
+/* Base */
+body {
+  font-family: var(--bs-font-sans-serif);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+@import 'components';
+@import 'utilities';

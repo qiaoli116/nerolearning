@@ -1,0 +1,11 @@
+/* Theme overrides for dark mode */
+[data-bs-theme="dark"] {
+  --bs-body-color: #EDEDED;
+  --bs-body-bg: #111217;
+  --bs-primary: #9B7FFF;
+  --bs-secondary: #2ad6c2;
+  --bs-link-color: #9B7FFF;
+  --bs-border-color: #2a2b31;
+  --bs-card-bg: #1a1b22;
+  --bs-heading-color: #ffffff;
+}
